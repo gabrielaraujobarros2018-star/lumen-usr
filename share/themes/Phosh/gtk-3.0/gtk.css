@@ -1,0 +1,38 @@
+/*
+ * Phosh Wallpaper Theme for Lumen OS
+ * Sets lockscreen, app grid, and overview backgrounds to default.jpeg
+ * Compatible with Phosh 0.38+ and GTK3
+ */
+
+phosh-lockscreen,
+.phosh-lockshield {
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url('file:///usr/share/backgrounds/default.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+phosh-app-grid {
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url('file:///usr/share/backgrounds/default.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+phosh-overview {
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('file:///usr/share/backgrounds/default.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Optional: Subtle top bar transparency over wallpaper */
+phosh-top-panel {
+  background-color: rgba(0, 0, 0, 0.85);
+}
