@@ -1,3 +1,5 @@
+# Old. M1 and down era
+
 posix=enabled
 standard=POSIX.1-2017
 shell-compatible=true
