@@ -1,0 +1,14 @@
+amd=true
+intel=true
+x86=true
+x86_64=true
+smp=true
+apic=true
+acpi=true
+legacy-bios=true
+uefi=true
+virtualized=true
+baremetal=true
+validated=true
+system-owned
+end

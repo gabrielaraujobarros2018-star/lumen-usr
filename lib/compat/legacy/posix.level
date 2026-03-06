@@ -1,0 +1,13 @@
+posix=enabled
+standard=POSIX.1-2017
+shell-compatible=true
+fs-compatible=true
+signals-supported=true
+fork-model=hybrid
+exec-model=limited
+pipes=true
+tty=true
+ioctl=partial
+compliance=strict
+system-owned
+end
