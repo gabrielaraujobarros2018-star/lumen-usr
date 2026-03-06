@@ -1,0 +1,15 @@
+<!-- Old. M1 and down era -->
+
+abi=stable
+arch=x86,x86_64
+endianness=little
+word-size=32,64
+float=ieee754
+syscall-version=1
+kernel-bound=true
+gui-bound=true
+userspace-limited=true
+versioned=true
+immutable
+system-owned
+end
