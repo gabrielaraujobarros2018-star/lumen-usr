@@ -1,0 +1,12 @@
+#!/bin/bash
+# Simple sl: Train chugs across screen
+trap "" WINCH
+tput civis; clear
+while :; do
+  printf 'e[1;36m    |e[0m       
+e[1;36m   |e[0m        
+e[1;36m  |e[0m         
+e[1;36m |e[0m'
+  sleep 0.1
+done
+# Ctrl+C to exit

@@ -1,0 +1,8 @@
+Install process of the Easter Eggs (Steam Locomotive, Cow message, Matrix rain)
+==========================================
+
+Command:
+
+sudo mkdir -p /usr/local/bin
+sudo cp sl cowsay cmatrix-lite /usr/local/bin/
+sudo chmod 755 /usr/local/bin/{sl,cowsay,cmatrix-lite}

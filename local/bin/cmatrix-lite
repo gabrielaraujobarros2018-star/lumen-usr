@@ -1,0 +1,11 @@
+#!/bin/bash
+# Fake Matrix: Falling chars
+trap "tput cnorm; exit" INT
+tput civis; clear
+cols=$(tput cols); rows=$(tput lines)
+while :; do
+  for i in $(seq 1 $((cols/2))); do
+    printf 'e[32m%se[0m' $((RANDOM%94+33)) | pv -qL 20
+  done &
+  sleep 0.1
+done
