@@ -1,0 +1,9 @@
+/compat
+├── linux
+│   ├── lib
+│   │   └── ld-linux.so.2        → symlink
+│   └── lib64
+│       └── ld-linux-x86-64.so.2 → symlink
+└── ld-linux
+    ├── interpreter-check.sh     → small script
+    └── version                  → tiny text file
