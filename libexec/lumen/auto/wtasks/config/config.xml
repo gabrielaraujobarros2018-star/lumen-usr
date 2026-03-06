@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <wtSettings>
+        <property name="WeeklyTasks" value="Checks OS & Binary integrity" />
+        <property name="Version" value="1.0" />
+    </wtSettings>
+    <database>
+        <host>localhost</host>
+        <port>5432</port>
+    </database>
+</config>
