@@ -1,0 +1,1 @@
+This makes uptime command work like people expect, even if your binary isn't there yet.
