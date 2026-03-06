@@ -1,0 +1,27 @@
+# File: uptime (shell wrapper – place in /usr/bin/uptime)
+# Make executable: chmod +x /usr/bin/uptime
+
+#!/bin/sh
+# Lumen – uptime wrapper using our custom engine
+# Falls back to kernel /proc/uptime parse if binary missing
+
+BIN="/usr/bin/uptime-engine"
+
+if [ -x "$BIN" ]; then
+    exec "$BIN"
+else
+    # Minimal fallback using awk (common in busybox/minimal systems)
+    awk '
+    {
+        up = $1;
+        days = int(up / 86400);
+        up %= 86400;
+        hours = int(up / 3600);
+        up %= 3600;
+        mins = int(up / 60);
+        secs = int(up % 60);
+        if (days > 0) printf "%d day%s, ", days, days > 1 ? "s" : "";
+        if (hours > 0 || days > 0) printf "%d:", hours;
+        printf "%02d:%02d\n", mins, secs;
+    }' /proc/uptime
+fi
